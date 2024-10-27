@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <meta name="author" content="Pushpendra Pratap Singh" />
+    <meta name="description" content="This is a Responsive Website" />
+    <meta name="keywords" content="Best Web Developer, Best Website Creator in NCR" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./resources/lib/aos/aos.css" />
+    <link rel="stylesheet" href="./resources/lib/lightbox/css/lightbox.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./resources/css/style.css" />
+</head>
+
+<body>
+    <h1>Java Basic Online Test-1</h1>
+    <p id="name">Welcome Beautiful Ruchi</p>
+    <h2>This is an simple test to learn your mistake and to improve for better</h2>
+    <p>
+        Correct Answer: 2 points | Wrong: -1 point <br />
+        Grades: A* (100% score) | A (80%-99%) | B (60%-80%) | C (40%-60%) | D (0%-40%)
+    </p>
+    <hr />
+    <div class="quiz">
+        <div class="question">
+            <pre>1. What will be the output of the following Java code?
+
+                class area {
+                public static void main(String args[]) 
+                {    
+                     double r, pi, a;
+                     r = 9.8;
+                     pi = 3.14;
+                     a = pi * r * r;
+                     System.out.println(a);
+                } 
+            }
+
+            301.5656
+            301.56560000
+            301.56
+            301</pre>
+        </div>
+        <div class="answer">
+            <input type="text" id="answer1">
+            <button onclick="checkAnswer1()">Submit</button>
+            <p id="result1"></p>
+        </div>
+        <div class="question">
+            <pre>2. What is the range of byte data type in Java?
+
+                -32768 to 32767
+                -2147483648 to 2147483647
+                None of the mentioned
+                -128 to 127</pre>
+        </div>
+        <div class="answer">
+            <input type="text" id="answer2">
+            <button onclick="checkAnswer2()">Submit</button>
+            <p id="result2"></p>
+        </div>
+        <div class="question">
+            <pre>3. Which of these literals can be contained in float data type variable?
+
+                -3.4e+038
+                -1.7e+308
+                +1.7e+308
+                -3.4e+050</pre>
+        </div>
+        <div class="answer">
+            <input type="text" id="answer3">
+            <button onclick="checkAnswer3()">Submit</button>
+            <p id="result3"></p>
+        </div>
+        <div class="question">
+           <pre>4. What will be the output of the following Java statement?
+
+            class output {
+                public static void main(String args[]) 
+                {
+                    double a, b,c;
+                    a = 3.0/0;
+                    b = 0/4.0;
+                    c=0/0.0;
+               
+                System.out.println(a);
+                    System.out.println(b);
+                    System.out.println(c);
+                } 
+            }
+
+            Infinity
+            all of the mentioned
+            NaN
+            0.0</pre>
+        </div>
+        <div class="answer">
+            <input type="text" id="answer4">
+            <button onclick="checkAnswer4()">Submit</button>
+            <p id="result4"></p>
+        </div>
+        <div class="question">
+            <pre>5. What is the range of short data type in Java?
+
+                None of the mentioned
+                -32768 to 32767
+                -128 to 127
+                -2147483648 to 2147483647</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer5">
+             <button onclick="checkAnswer5()">Submit</button>
+             <p id="result5"></p>
+         </div>
+         <div class="question">
+            <pre>6. What will be the output of the following Java code?
+
+                class increment {
+                public static void main(String args[]) 
+                {        
+                     int g = 3;
+                     System.out.print(++g * 8);
+                } 
+            }
+
+            32
+            24
+            33
+            25</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer6">
+             <button onclick="checkAnswer6()">Submit</button>
+             <p id="result6"></p>
+         </div>
+         <div class="question">
+            <pre>7. Which of the following are legal lines of Java code?
+
+                1. int w = (int)888.8;
+             2. byte x = (byte)100L;
+             3. long y = (byte)100;
+             4. byte z = (byte)1000L;
+
+             All statements are correct
+             2 and 3
+             1 and 2
+             3 and 4</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer7">
+             <button onclick="checkAnswer7()">Submit</button>
+             <p id="result7"></p>
+         </div>
+         <div class="question">
+            <pre>8. What will be the output of the following Java code?
+
+                class booloperators {
+                public static void main(String args[]) 
+                {
+                    boolean var1 = true;
+                boolean var2 = false;
+                System.out.println((var1 & var2));
+                } 
+            }
+
+            1
+            false
+            0
+            true</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer8">
+             <button onclick="checkAnswer8()">Submit</button>
+             <p id="result8"></p>
+         </div>
+         <div class="question">
+            <pre>9. What will be the output of the following Java program?
+
+                class mainclass {
+                public static void main(String args[]) 
+                {
+                    boolean var1 = true;
+                boolean var2 = false;
+                if (var1)
+                    System.out.println(var1);
+                else
+                    System.out.println(var2);
+               } 
+            }
+
+            false
+            1
+            true
+            0</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer9">
+             <button onclick="checkAnswer9()">Submit</button>
+             <p id="result9"></p>
+         </div>
+         <div class="question">
+            <pre>10. Which of these values can a boolean variable contain?
+
+                True & False
+                Any integer value
+                0 & 1
+                true</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer10">
+             <button onclick="checkAnswer10()">Submit</button>
+             <p id="result10"></p>
+         </div>
+         <div class="question">
+            <pre>11. What will be the output of the following Java program?
+
+                class mainclass {
+                public static void main(String args[]) 
+                {
+                    char a = 'A';
+                    a++;
+                System.out.print((int)a);
+                } 
+            }
+
+            65
+            66
+            64
+            67</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer11">
+             <button onclick="checkAnswer11()">Submit</button>
+             <p id="result11"></p>
+         </div>
+         <div class="question">
+            <pre>12. Which one is a valid declaration of a boolean?
+
+                boolean b2 = 'false';
+                boolean b3 = false;
+                boolean b1 = 1;
+                boolean b4 = 'true'</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer12">
+             <button onclick="checkAnswer12()">Submit</button>
+             <p id="result12"></p>
+         </div>
+         <div class="question">
+            <pre>13. What is the numerical range of a char data type in Java?
+
+                0 to 256
+                -128 to 127
+                0 to 65535
+                0 to 32767</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer13">
+             <button onclick="checkAnswer13()">Submit</button>
+             <p id="result13"></p>
+         </div>
+         <div class="question">
+            <pre>14. Which of these coding types is used for data type characters in Java?
+
+                ISO-LATIN-1
+                None of the mentioned
+                ASCII
+                UNICODE</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer14">
+             <button onclick="checkAnswer14()">Submit</button>
+             <p id="result14"></p>
+         </div>
+         <div class="question">
+            <pre>15. Which of these occupy first 0 to 127 in Unicode character set used for characters in Java?
+                
+                ISO-LATIN-1
+                ASCII
+                ASCII and ISO-LATIN1
+                None of the mentioned</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer15">
+             <button onclick="checkAnswer15()">Submit</button>
+             <p id="result15"></p>
+         </div>
+         <div class="question">
+            <pre>16. What will be the output of the following Java code?
+
+                class asciicodes {
+                public static void main(String args[]) 
+                {
+                    char var1 = 'A';
+                char var2 = 'a';
+                System.out.println((int)var1 + " " + (int)var2);
+                } 
+            }
+
+            67 95
+            66 98
+            162
+            65 97</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer16">
+             <button onclick="checkAnswer16()">Submit</button>
+             <p id="result16"></p>
+         </div>
+         <div class="question">
+            <pre>17. What will be the output of the following Java program?
+
+                class Output 
+            {
+                public static void main(String args[]) 
+                {    
+                     int a = 1;
+                     int b = 2;
+                     int c;
+                     int d;
+                     c = ++b;
+                     d = a++;
+                     c++;
+                     b++;
+                     ++a;
+                     System.out.println(a + " " + b + " " + c);
+                } 
+            }
+
+            3 2 4
+            3 2 3
+            3 4 4
+            2 3 4</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer17">
+             <button onclick="checkAnswer17()">Submit</button>
+             <p id="result17"></p>
+         </div>
+         <div class="question">
+            <pre>18. Decrement operator, −−, decreases the value of variable by what number?
+
+                3
+                4
+                1
+                2</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer18">
+             <button onclick="checkAnswer18()">Submit</button>
+             <p id="result18"></p>
+         </div>
+         <div class="question">
+            <pre>19. What will be the output of the following Java program?
+
+                class increment 
+            {
+                public static void main(String args[])
+                {
+                    double var1 = 1 + 5; 
+                    double var2 = var1 / 4;
+                    int var3 = 1 + 5;
+                    int var4 = var3 / 4;
+                    System.out.print(var2 + " " + var4);
+                            
+                } 
+            }
+
+            1.5 1
+            1.5 1.0
+            0 1
+            1 1</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer19">
+             <button onclick="checkAnswer19()">Submit</button>
+             <p id="result19"></p>
+         </div>
+         <div class="question">
+            <pre>20. With x = 0, which of the following are legal lines of Java code for changing the value of x to 1?
+
+             1. x++;
+             2. x = x + 1;
+             3. x += 1;
+             4. x =+ 1;
+
+             1, 2 & 3
+             3 & 2
+             1 & 4
+             1, 2, 3 & 4</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer20">
+             <button onclick="checkAnswer20()">Submit</button>
+             <p id="result20"></p>
+         </div>
+         <div class="question">
+            <pre>21. Which of these statements are incorrect?
+
+                None of the mentioned
+                Assignment operators can be used only with numeric and character data type
+                Assignment operators are more efficiently implemented by Java run-time system than their equivalent long forms
+                Assignment operators run faster than their equivalent long forms</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer21">
+             <button onclick="checkAnswer21()">Submit</button>
+             <p id="result21"></p>
+         </div>
+         <div class="question">
+            <pre>22. Which of the following can be operands of arithmetic operators?
+
+                Characters
+                Both Numeric & Characters
+                Boolean
+                Numeric</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer22">
+             <button onclick="checkAnswer22()">Submit</button>
+             <p id="result22"></p>
+         </div>
+         <div class="question">
+            <pre>23. Modulus operator, %, can be applied to which of these?
+
+                None of the mentioned
+                Integers
+                Both Integers and floating - point numbers
+                Floating - point numbers</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer23">
+             <button onclick="checkAnswer23()">Submit</button>
+             <p id="result23"></p>
+         </div>
+         <div class="question">
+            <pre>24. What will be the output of the following Java program?
+
+                class Modulus 
+            {
+                public static void main(String args[]) 
+                {    
+                     double a = 25.64;
+                     int  b = 25;
+                     a = a % 10;
+                     b = b % 10;
+                     System.out.println(a + " "  + b);
+                } 
+            }
+
+            5.640000000000001 5
+            5.640000000000001 5.0
+            5 5.640000000000001
+            5 5</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer24">
+             <button onclick="checkAnswer24()">Submit</button>
+             <p id="result24"></p>
+         </div>
+         <div class="question">
+            <pre>25. What will be the output of the following Java program?
+
+                class increment 
+            {
+                public static void main(String args[]) 
+                {        
+                     int g = 3;
+                     System.out.print(++g * 8);
+                } 
+            }
+
+            32
+            33
+            24
+            25</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer25">
+             <button onclick="checkAnswer25()">Submit</button>
+             <p id="result25"></p>
+         </div>
+         <div class="question">
+            <pre>26. Can 8 byte long data type be automatically type cast to 4 byte float data type?
+
+                True
+                False</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer26">
+             <button onclick="checkAnswer26()">Submit</button>
+             <p id="result26"></p>
+         </div>
+         <div class="question">
+            <pre>27. What will be the output of the following Java program?
+
+                class leftshift_operator 
+            {
+                public static void main(String args[]) 
+                {        
+                     byte x = 64;
+                     int i;
+                     byte y; 
+                     i = x << 2;
+                     y = (byte) (x << 2)
+                     System.out.print(i + " " + y);
+                } 
+            }
+
+            0 64
+            0 256
+            64 0
+            256 0</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer27">
+             <button onclick="checkAnswer27()">Submit</button>
+             <p id="result27"></p>
+         </div>
+         <div class="question">
+            <pre>28. What will be the output of the following Java program?
+
+                class bitwise_operator 
+            {
+                public static void main(String args[]) 
+                {    
+                     int a = 3;
+                     int b = 6;
+                  int c = a | b;
+                     int d = a & b;             
+                     System.out.println(c + " "  + d);
+                } 
+            }
+
+            5 2
+            7 7
+            7 2
+            7 5</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer28">
+             <button onclick="checkAnswer28()">Submit</button>
+             <p id="result28"></p>
+         </div>
+         <div class="question">
+            <pre>29. Which operator is used to invert all the digits in a binary representation of a number?
+
+                ^
+                <<<
+                ~
+                >>></pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer29">
+             <button onclick="checkAnswer29()">Submit</button>
+             <p id="result29"></p>
+         </div>
+         <div class="question">
+            <pre>30. What will be the output of the following Java program?
+
+                class Output 
+            {
+                public static void main(String args[]) 
+                {    
+                     int a = 1;
+                     int b = 2;
+                     int c = 3;
+                     a |= 4;
+                     b >>= 1;
+                     c <<= 1;
+                     a ^= c;
+                     System.out.println(a + " " + b + " " + c);
+                } 
+            }
+
+            2 3 4
+            3 1 6
+            3 3 6
+            2 2 3</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer30">
+             <button onclick="checkAnswer30()">Submit</button>
+             <p id="result30"></p>
+         </div>
+         <div class="question">
+            <pre>31. Which of these statements are incorrect?
+
+                The left shift operator can be used as an alternative to multiplying by 2
+                The right shift operator, >>, shifts all of the bits in a value to the right specified number of times
+                The right shift operator automatically fills the higher order bits with 0
+                The left shift operator, <<, shifts all of the bits in a value to the left specified number of times</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer31">
+             <button onclick="checkAnswer31()">Submit</button>
+             <p id="result31"></p>
+         </div>
+         <div class="question">
+            <pre>32. What will be the output of the following Java program?
+
+                class rightshift_operator 
+            {
+                public static void main(String args[]) 
+                {    
+                     int x; 
+                     x = 10;
+                     x = x >> 1;
+                     System.out.println(x);
+                } 
+            }
+
+            10
+            20
+            5
+            2</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer32">
+             <button onclick="checkAnswer32()">Submit</button>
+             <p id="result32"></p>
+         </div>
+         <div class="question">
+            <pre>33. What will be the output of the following Java program?
+
+                class bitwise_operator 
+            {
+                public static void main(String args[])
+                {
+                    int var1 = 42;
+                    int var2 = ~var1;
+                    System.out.print(var1 + " " + var2);     	
+                } 
+            }
+
+            42 -43
+            43 43
+            42 42
+            42 43</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer33">
+             <button onclick="checkAnswer33()">Submit</button>
+             <p id="result33"></p>
+         </div>
+         <div class="question">
+            <pre>34. Which of these is not a bitwise operator?
+
+                &
+                &=
+                |=
+                <=</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer34">
+             <button onclick="checkAnswer34()">Submit</button>
+             <p id="result34"></p>
+         </div>
+         <div class="question">
+            <pre>35. Which right shift operator preserves the sign of the value?
+
+                <<
+                <<=
+                >>=
+                >></pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer35">
+             <button onclick="checkAnswer35()">Submit</button>
+             <p id="result35"></p>
+         </div>
+         <div class="question">
+            <pre>36. On applying Left shift operator, <<, on integer bits are lost one they are shifted past which position bit?
+
+                1
+                33
+                31
+                32</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer36">
+             <button onclick="checkAnswer36()">Submit</button>
+             <p id="result36"></p>
+         </div>
+         <div class="question">
+            <pre>37. What will be the output of the following Java code?
+
+                class Relational_operator 
+            {
+                public static void main(String args[])
+                {
+                    int var1 = 5; 
+                    int var2 = 6;
+                    System.out.print(var1 > var2);
+                } 
+            }
+
+            false
+            0
+            true
+            1</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer37">
+             <button onclick="checkAnswer37()">Submit</button>
+             <p id="result37"></p>
+         </div>
+         <div class="question">
+            <pre>38. What will be the output of the following Java code?
+
+                class bool_operator 
+            {
+                public static void main(String args[]) 
+                {    
+                     boolean a = true;
+                     boolean b = !true;
+                     boolean c = a | b;
+                  boolean d = a & b;
+                     boolean e = d ? b : c;
+                     System.out.println(d + " " + e);
+                } 
+            }
+
+            true false
+            false false
+            true ture
+            false true</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer38">
+             <button onclick="checkAnswer38()">Submit</button>
+             <p id="result38"></p>
+         </div>
+         <div class="question">
+            <pre>39. What will be the output of the following Java code?
+
+                class Output 
+            {
+                public static void main(String args[]) 
+                {    
+                     int x , y = 1;
+                     x = 10;
+                     if (x != 10 && x / 0 == 0)
+                         System.out.println(y);
+                     else
+                         System.out.println(++y);
+                } 
+            }
+
+            Runtime error owing to division by zero in if condition
+            Unpredictable behavior of program
+            2
+            1</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer39">
+             <button onclick="checkAnswer39()">Submit</button>
+             <p id="result39"></p>
+         </div>
+         <div class="question">
+            <pre>40. Which of these is returned by "greater than", "less than" and "equal to" operators?
+
+                Boolean
+                Floating - point numbers
+                None of the mentioned
+                Integers</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer40">
+             <button onclick="checkAnswer40()">Submit</button>
+             <p id="result40"></p>
+         </div>
+         <div class="question">
+            <pre>41. Which of these operators can skip evaluating right hand operand?
+
+                |
+                !
+                &
+                &&</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer41">
+             <button onclick="checkAnswer41()">Submit</button>
+             <p id="result41"></p>
+         </div>
+         <div class="question">
+            <pre>42. What will be the output of the following Java code?
+
+                class Output 
+            {
+                public static void main(String args[]) 
+                {    
+                     boolean a = true;
+                     boolean b = false;
+                     boolean c = a ^ b;
+                     System.out.println(!c);
+                } 
+            }
+
+            false
+            1
+            0
+            true</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer42">
+             <button onclick="checkAnswer42()">Submit</button>
+             <p id="result42"></p>
+         </div>
+         <div class="question">
+            <pre>43. What will be the output of the following Java code?
+
+                class ternary_operator 
+            {
+                public static void main(String args[]) 
+                {        
+                     int x = 3;
+                     int y = ~ x;
+                     int z;
+                     z = x > y ? x : y;
+                     System.out.print(z);
+                } 
+            }
+
+            1
+            0
+            -4
+            3</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer43">
+             <button onclick="checkAnswer43()">Submit</button>
+             <p id="result43"></p>
+         </div>
+         <div class="question">
+            <pre>44. Which of the following operators can operate on a boolean variable?
+
+   
+                1. &&
+                2. ==
+                3. ?:
+                4. +=
+
+                3 & 2
+                1 & 4
+                1, 2 & 3
+                1, 2 & 4</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer44">
+             <button onclick="checkAnswer44()">Submit</button>
+             <p id="result44"></p>
+         </div>
+         <div class="question">
+            <pre>45. Which of these statements is correct?
+
+                true and false are numeric values 0 and 1
+                true and false are non numeric values
+                true and false are numeric values 1 and 0
+                true is any non zero value and false is 0</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer45">
+             <button onclick="checkAnswer45()">Submit</button>
+             <p id="result45"></p>
+         </div>
+         <div class="question">
+            <pre>46. What is the output of relational operators?
+
+                Boolean
+                Characters
+                Double
+                Integer</pre>
+         </div>
+         <div class="answer">
+             <input type="text" id="answer46">
+             <button onclick="checkAnswer46()">Submit</button>
+             <p id="result46"></p>
+         </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./resources/lib/aos/aos.js"></script>
+    <script src="./resources/lib/lightbox/js/lightbox.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./resources/js/main.js"></script>
+</body>
+
+</html>
+
